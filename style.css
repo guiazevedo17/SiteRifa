@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+body{
+    background-color: #F9F2ED;
+
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 0.5fr;
+	grid-template-rows: 0.25fr 1.5fr 0.7fr;
+    grid-template-areas: ". top ."
+                        ". rifas ."
+                        ". botao .";
+
+    text-align: center;
+    font-family: "Poppins";
+    font-size: 30px;
+    font-weight: bold;
+    color: #F87474;
+}
+
+h1{
+    text-align: center;
+    grid-area: top;
+    background-color: #F87474;
+    color: #FFB562;
+    margin-bottom: 20px;
+}
+
+.rifas{
+    grid-area: rifas;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr 0.2fr;
+    gap: 20px;
+}
+
+.ticket{
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 190px;
+    height: 131.55px;
+    background-color: #3AB0FF;
+    color: #FFB562;
+    border: 10px dotted #F9F2ED;
+    margin-bottom: 0;
+    font-size: 38px;
+}
+
+.botao{
+    grid-area: botao;
+}
+
+.botao button{
+    background-color: #FFB562;
+    color: #3AB0FF;
+
+    width: 240px;
+    height: 80px;
+    border-radius: 30px;
+    border: 3px solid #3AB0FF;
+    margin-top: 20px;
+    margin-bottom: 10px;
+
+    font-weight: bold;
+    font-size: 25px;
+}
