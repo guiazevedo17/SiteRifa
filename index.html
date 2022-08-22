@@ -113,7 +113,7 @@
                 <h3>34</h3>
             </section>
 
-            <section class="ticket">
+            <section id="35" class="ticket" onclick="selected">
                 <h3>35</h3>
             </section>
 
@@ -124,10 +124,20 @@
         </main>
 
         <div class="botao">
-            <button>Finalizei</button>
+            <button><span>FINALIZAR</span></button>
 
             <p>Cada rifa custa R$10,00</p>
         </div>
+
+        <script>
+            function selected(id){
+               var ticket = document.getElementById(id);
+
+               ticket.style.backgroundColor = "#243A73";
+            }
+
+            
+        </script>
 
     </body>
 

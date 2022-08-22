@@ -7,7 +7,7 @@
 
 
 body{
-    background-color: #F9F2ED;
+    background-color: #F6F6F6;
 
     display: grid;
     grid-template-columns: 0.5fr 2fr 0.5fr;
@@ -20,15 +20,17 @@ body{
     font-family: "Poppins";
     font-size: 30px;
     font-weight: bold;
-    color: #F87474;
 }
 
-h1{
+body h1{
     text-align: center;
     grid-area: top;
-    background-color: #F87474;
-    color: #FFB562;
+    color: #FEC260;
     margin-bottom: 20px;
+
+    -webkit-text-stroke-width: 2.2px;
+    -webkit-text-stroke-color: #243A73;
+
 }
 
 .rifas{
@@ -44,13 +46,32 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 190px;
     height: 131.55px;
-    background-color: #3AB0FF;
-    color: #FFB562;
-    border: 10px dotted #F9F2ED;
+    background-color: #A10035;
+    color: #FEC260;
+    border: 10px dotted #F6F6F6;
+
     margin-bottom: 0;
     font-size: 38px;
+}
+
+.ticket input{
+    /*display: none;*/
+}
+
+.ticket h3{
+    width: 130px;
+    height: 80px;
+    border: 3px dashed black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
 }
 
 .botao{
@@ -58,16 +79,81 @@ h1{
 }
 
 .botao button{
-    background-color: #FFB562;
-    color: #3AB0FF;
+    background: linear-gradient(to bottom, #FEC260, #a18900);
+    color: rgb(34, 32, 32);
 
     width: 240px;
     height: 80px;
     border-radius: 30px;
-    border: 3px solid #3AB0FF;
+    border: 0px;
+
+    box-shadow: 0 9px #999;
+
     margin-top: 20px;
     margin-bottom: 10px;
 
     font-weight: bold;
     font-size: 25px;
+}
+
+.botao span{
+    font-size: 24px;
+    color: #243A73;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.botao p{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #243A73;
+}
+
+/* Passando o Mouse em Cima das Rifas */
+
+.ticket:hover{
+    cursor: pointer;
+    box-shadow: 20px 20px 60px 15px #FEC260;
+}
+
+.ticket input:checked .ticket{
+    background-color: #243A73;
+}
+
+/* Clicando nas Rifas */
+
+.selected{
+    background-color: #243A73;
+}
+
+/* Animação Botão */
+
+.botao button:hover span{
+    padding-right: 25px;
+    
+}
+
+.botao button:active {
+    box-shadow: 0 5px #243A73;
+    transform: translateY(4px);
+}
+
+.botao span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.botao button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.ticket p::selection{
+    background-color: #243A73;
 }
