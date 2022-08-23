@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+
+        <title>Formulário Rifinha do HEXA</title>
+    </head>
+
+    <body>
+    
+        <div class="top">
+            <img src="images/brasao.png">
+            <span class="pri">Rifinha</span>
+            <span class="seg">do</span>
+            <span class="ter">HEXA</span>
+            <img src="images/brasao.png">
+        </div>
+
+        <form class="form">
+
+            <p>Preencha o formlário para que possamos entrar em contato com você para efetuar o pagamento</p>
+
+            <img src="images/ney.png">
+
+            <ul>
+                <li>
+                    <label for="nome">Nome: </label>
+                    <input class="nomeForm" type="text" id="nome">
+                </li>
+
+                <li>
+                    <label for="mail">E-mail: </label>
+                    <input class="mailForm" type="text" id="mail">
+                </li>
+
+                <li>
+                    <label for="tel">Telefone: </label>
+                    <input class="telForm" type="text" id="tel">
+                </li>
+            </ul>
+
+        </form>
+
+        <div class="botao">
+            <button onclick="enviarFormulario()"><span>ENVIAR</span></button>
+        </div>
+
+        <script type="text/javascript" src="index.js">  
+        </script>
+
+    </body>
+
+</html>
