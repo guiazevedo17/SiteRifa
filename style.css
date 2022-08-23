@@ -28,6 +28,9 @@ body{
     -webkit-text-stroke-color: #243A73;
 
     margin-bottom: 28px;
+
+    min-width: 700px;
+    min-height: 90px;
 }
 
 .top p{
@@ -231,3 +234,43 @@ input:checked + .ticket {
     margin-bottom: 40px;
 }
 
+@media screen and (max-width: 1440px) {
+   
+    body{
+        grid-template-rows: 0.15fr 1.5fr 0.5fr;
+    }
+
+    .rifas{
+        grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+   
+    body{
+        grid-template-rows: 0.01fr 1.5fr 0.7fr;
+    }
+
+    .rifas{
+        grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    }
+
+}
+
+@media screen and (max-width: 1049px) {
+
+    body{
+        grid-template-rows: 0.01fr 1.5fr 0.7fr;
+    }
+
+    .rifas{
+        grid-template-columns: 0.5fr 0.5fr;
+    }
+
+    .ticket{
+        margin-left: 60px;
+    }
+
+}
